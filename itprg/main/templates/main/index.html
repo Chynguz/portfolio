@@ -1,0 +1,28 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }}{% endblock%}
+
+
+{% block content %}
+<div class="features">
+    <h1>{{ title| upper }}</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos accusamus iure odio laboriosam veritatis eaque non, temporibus delectus natus vero, omnis eos accusantium consectetur ipsum corporis dolorum voluptatum totam. Tempore.</p>
+    <button class="btn btn-warning"> About us</button>
+
+    <!-- {% for i in values %}
+        <p>{{i}}</p>
+    {% endfor %}
+    {% for i in obj %}
+        {% filter upper %}
+            <p>{{i}}</p>
+        {% endfilter %}
+    {% endfor %}
+    -->
+</div>
+
+    <!-- {% include 'main/test.html' %}
+    {% include 'main/test.html' %}
+    {% include 'main/test.html' %}    -->
+{% endblock%}  
+
+<!-- include нужен для того чтоб ставить то что часто может повторятся, например логотип -->
