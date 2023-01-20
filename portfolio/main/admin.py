@@ -1,5 +1,7 @@
 from django.contrib import admin
-from main.models import Skils, Messaga, Project, About, About_me
+
+from main.models import About, About_me, Messaga, Project, Skils
+
 # Register your models here.
 
 

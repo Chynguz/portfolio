@@ -1,7 +1,10 @@
-from django.shortcuts import render
-from main.models import Skils, Messaga, Project, About, About_me
 from django.http import HttpResponseRedirect
+from django.shortcuts import render
+
+from main.models import About, About_me, Messaga, Project, Skils
+
 # Create your views here.
+
 
 def main(request):
     skils = Skils.objects.all()
@@ -12,6 +15,7 @@ def main(request):
 # def project(request):
 #     project = Project.objects.all()
 #     return render(request, {'project': project})
+
 
 def message(request):
     if request.method == 'POST':
@@ -29,9 +33,3 @@ def message(request):
 #         project.discription = request.POST.get('discription')
 #         project.link = request.POST.get('link')
 #         project.image = request.POST.get('img')
-
-
-
-
-
-
